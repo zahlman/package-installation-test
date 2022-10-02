@@ -1,6 +1,6 @@
 [tool.poetry]
-name = "package-installation-test"
-version = "0.1.0"
+name = "example_package"
+version = "1.0.0"
 description = ""
 authors = ["Karl Knechtel <karl.a.knechtel@gmail.com>"]
 
@@ -9,6 +9,9 @@ python = "^3.8"
 
 [tool.poetry.dev-dependencies]
 pytest = "^5.2"
+
+[tool.poetry.scripts]
+demo-example-package = "example_package:main"
 
 [build-system]
 requires = ["poetry-core>=1.0.0"]
